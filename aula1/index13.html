@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 13</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-gray-100">
+        <h1 class="text-center text-3xl p-4 font-bold text-blue-700">Componentes
+            Dropdown</h1>
+        <div class="container px-4 py-6 mx-auto space-y-1">
+            <div class="relative">
+
+                <button
+                    class="flex items-center  bg-white text-base rounded px-3 py-1 border border-b-gray-400 shadow text-gray-600 cursor-pointer hover:bg-gray-100 transition duration-300 ease-in">
+                    Botão
+                    <svg class="w-4 h-4 ml-3" data-slot="icon" fill="none"
+                        stroke-width="1.5"
+                        stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"></path>
+                    </svg>
+                </button>
+
+                <div
+                    class="absolute hidden bg-white border border-b-gray-400 py-1 shadow-md rounded-md"
+                    style="width: 200px;">
+                    <a
+                        class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-300"
+                        href="#">Links</a>
+                    <a
+                        class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-300"
+                        href="#">Links</a>
+                    <a
+                        class="block text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-300"
+                        href="#">Links</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
