@@ -22,7 +22,7 @@
                     Estudantes
                 </h2>
                 <nav
-                    class="flex items-center gap-8 text-gray-500 font-semibold">
+                    class="flex items-center gap-8 text-gray-500 font-semibold md:hidden">
                     <a href target="_self"
                         class="hover:text-orange-700 transition duration-300 ease-in-out">Home</a>
                     <a href target="_self"
@@ -45,7 +45,7 @@
                 <h3 class="text-2xl font-medium mb-3 text-gray-900">Estudantes
                     Cadastrados(as)</h3>
                 <p class="text-gray-600">Nesta lista contem os nomes dos
-                    estudantes actuais na
+                    estudantes actuais da
                     turma.</p>
             </div>
 
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <section class>
+            <section class="">
                 <table
                     class="w-full min-w-lg bg-white shadow-lg table-fixed border-collapse border border-gray-300 ">
                     <caption class="text-gray-500 caption-bottom mt-4">
@@ -72,8 +72,8 @@
                             <th class="p-1">Nome Completo</th>
                             <th class="p-1">Genero</th>
                             <th class="p-1">Whatsapp</th>
-                            <th class="p-1">Morada</th>
-                            <th class="p-1">Ações</th>
+                            <th class="p-1">Usuário</th>
+                            <!-- <th class="p-1">Ações</th> -->
                         </tr>
                     </thead>
 
@@ -87,15 +87,8 @@
                             <td class="p-1 text-gray-600 text-center">XXX XXX
                                 XXX</td>
                             <td
-                                class="p-1 text-gray-600 text-center">Luanda</td>
-                            <td class="space-x-2 text-center">
-                                <a href class="text-blue-500">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </a>
-                                <a href class="text-red-500">
-                                    <i class="fa-solid fa-trash"></i>
-                                </a>
-                            </td>
+                                class="p-1 text-gray-600 text-center">Estudante</td>
+
                         </tr>
                         <tr class="border border-gray-300">
                             <td
@@ -106,40 +99,23 @@
                             <td class="p-1 text-gray-600 text-center">XXX XXX
                                 XXX</td>
                             <td
-                                class="p-1 text-gray-600 text-center">Luanda</td>
-                            <td class="space-x-2 text-center">
-                                <a href class="text-blue-500">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </a>
-                                <a href class="text-red-500">
-                                    <i class="fa-solid fa-trash"></i>
-                                </a>
-                            </td>
+                                class="p-1 text-gray-600 text-center">Estudante</td>
+
                         </tr>
                     </tbody>
                 </table>
 
-                <div class=" space-y-4">
-                    <div>
-                        <p class="text-sm">Seu nome não está na lista?</p>
-                        <!-- <div class="flex items-center gap-4">
-
-                            <div class="flex items-center gap-2">
-                                <label for="sim"
-                                    class="font-semibold">Sim!</label>
-                                <input type="radio" name="resposta" id="sim">
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <label for="nao"
-                                    class="font-semibold">Não!</label>
-                                <input type="radio" name="resposta" id="nao">
-                            </div>
-                        </div> -->
+                <div class=" flex justify-around items-center mt-5">
+                    <div class="space-y-4">
+                        <!-- <p class="text-sm">Seu nome não está na lista?</p> -->
+                        <a href="#" class="p-2 bg-green-600 text-white rounded-lg">Cadastra-se
+                            Agora.
+                        </a>
                     </div>
 
-                    <a href="#"
-                        class="p-3 bg-blue-600 text-white rounded-lg">Cadastra-se
-                        Agora.</a>
+                    <a href="#" class="h-fit p-2 bg-blue-600 text-white rounded-lg">
+                        Alterar meus dados <i class="fa-solid fa-user-pen"></i>
+                    </a>
                 </div>
             </section>
         </main>
