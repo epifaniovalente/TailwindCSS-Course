@@ -10,9 +10,91 @@
         <title>Editar Dados</title>
         <link rel="stylesheet" href="CSS/tailwind.css">
     </head>
-    <body class=" bg-gray-100">
+    <body class="min-h-screen bg-gray-100 space-y-8">
 
-        
+        <header class="bg-gray-900">
+            <div
+                class="max-w-5xl m-auto flex items-center justify-between px-8 py-2">
 
+                <h2 class="text-2xl font-bold text-orange-500">
+                    Estudantes
+                </h2>
+                <nav
+                    class="flex items-center gap-8 text-gray-500 font-semibold">
+                    <a href target="_self"
+                        class="hover:text-orange-700 transition duration-300 ease-in-out">Home</a>
+                    <a href target="_self"
+                        class="hover:text-orange-700 transition duration-300 ease-in-out">Actividades</a>
+                    <a href target="_self"
+                        class="hover:text-orange-700 transition duration-300 ease-in-out">Objectivos</a>
+                    <a href target="_self"
+                        class="hover:text-orange-700 transition duration-300 ease-in-out">Sobre
+                        Nós</a>
+                </nav>
+                <button type="button"
+                    class="text-gray-100 cursor-pointer text-2xl ">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        <main class="flex items-center justify-center">
+
+            <section
+                class="w-full max-w-md  bg-gray-50 shadow-lg rounded-lg p-6">
+
+                <div class="text-center mb-4">
+                    <div class="text-center">
+                        <h1
+                            class="text-orange-600 mb-2 text-2xl font-bold">Altere
+                            seus dados</h1>
+                    </div>
+
+                    <p class="text-gray-500 text-sm">Seguindo as informações
+                        abaixo</p>
+                </div>
+
+                <form action method="post" class="space-y-4" id="form">
+                    <div>
+                        <input type="number" minlength="1" max="1024" min="1"
+                            step="1" name="user_id" id="user_id"
+                            placeholder="Seu ID *"
+                            class="text-gray-500 border border-gray-600 rounded-lg px-4 py-2 w-full placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-orange-700 transition duration-300 ease-in-out">
+                        <span class="text-sm text-red-500" id="error_id"></span>
+                    </div>
+                    <div>
+                        <input type="text" name="user_name" id
+                            placeholder="Alterar Nome"
+                            class="text-gray-500 border border-gray-600 rounded-lg px-4 py-2 w-full placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-orange-700 transition duration-300 ease-in-out">
+                        <span class="text-sm text-red-500"></span>
+                    </div>
+                    <div>
+                        <input type="tel" name="user_whapp" id
+                            placeholder="Alterar Whatsapp"
+                            class="text-gray-500 border border-gray-600 rounded-lg px-4 py-2 w-full placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-orange-700 transition duration-300 ease-in-out">
+                        <span class="text-sm text-red-500"></span>
+                    </div>
+                    <div>
+                        <input type="text" name="user_type" id
+                            placeholder="Alterar tipo de usuário"
+                            class="text-gray-500 border border-gray-600 rounded-lg px-4 py-2 w-full placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-orange-700 transition duration-300 ease-in-out">
+                        <span class="text-sm text-red-500"></span>
+                    </div>
+                    <div>
+                        <input type="password" name="senha" id="senha"
+                            placeholder="password para confirmar a alteração *"
+                            class="text-gray-500 border border-gray-600 rounded-lg px-4 py-2 w-full placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-orange-700 transition duration-300 ease-in-out">
+                        <span class="text-sm text-red-500"
+                            id="error_senha"></span>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-orange-600 px-4 py-2 text-white active:scale-95 transition duration-300 ease-in-out rounded-lg cursor-pointer">
+                        Alterar Dados <i class="fa-solid fa-rotate"></i>
+                    </button>
+                </form>
+
+            </section>
+        </main>
+
+        <script src="Js/script.js"></script>
     </body>
 </html>
